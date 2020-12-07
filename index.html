@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="./style.css" rel="stylesheet" type="text/css">
+  <title>IP Address Tracker</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      <h1>IP Address Tracker</h1>
+      <div class="inputAndButton"><input placeholder="Search for any IP address or domain" type="text"><button><svg
+            xmlns="http://www.w3.org/2000/svg" width="11" height="14">
+            <path fill="none" stroke="#FFF" stroke-width="3" d="M2 1l6 6-6 6" /></svg></button></div>
+    </header>
+    <div class="nonHeader">
+      <div class="additionalInfo">
+        <div class="ip">IP ADDRESS<div class="ipInfo"></div>
+        </div>
+        <div class="location">LOCATION<div class="locationInfo"></div>
+        </div>
+        <div class="timezone">TIMEZONE<div class="timezoneInfo"></div>
+        </div>
+        <div class="isp">ISP<div class="ispInfo"></div>
+        </div>
+      </div>
+      <div id="map"></div>
+      <div class="attribution">
+        Challenge by Frontend Mentor.
+        Coded by Remington Greenbauer.
+      </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

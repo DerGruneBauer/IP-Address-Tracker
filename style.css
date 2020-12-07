@@ -1,0 +1,108 @@
+/* Designed for 375px mobile size screen and 1440 desktop sized screen */
+body{
+    margin: 0;
+    font-family: 'Rubik', sans-serif;
+}
+
+/* HEADER AND TITLE */
+header {
+    height: 30vh;
+    background-image: url('./images/pattern-bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1 {
+  margin: 0;
+  color: white;
+}
+
+/* INPUT FIELD AND SUBMIT BUTTON */
+.inputAndButton {
+  display: flex;
+  align-items: center;
+  margin: 20px 0 40px 0;
+}
+input {
+  height: 45px;
+  border-radius: 10px 0 0 10px;
+  border: none;
+  width: 400px;
+  outline: none;
+}
+
+input::placeholder {
+  padding-left: 10px;
+  color: gray;
+}
+button {
+  background-color: black;
+  outline: none;
+  height: 49px;
+  width: 40px;
+  border: none;
+  border-radius: 0 10px 10px 0;
+}
+button:hover{
+  cursor: pointer;
+}
+
+/* API INFO AND TITLES FOR SAME */
+.additionalInfo {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  background-color: whitesmoke;
+  height: 18vh;
+  width: 70%;
+  border-radius: 10px;
+  bottom: 57%;
+  left: 15%;
+  z-index: 99;
+}
+.ip, .location, .timezone, .isp {
+  font-size: 10px;
+  width: 25%;
+  margin: 30px 10px;
+  padding-left: 20px;
+  letter-spacing: 2px;
+  color: gray;
+  font-weight: bold;
+}
+.ip, .location, .timezone {
+  border-right: solid lightgray 2px;
+}
+.ipInfo, .locationInfo, .timezoneInfo, .ispInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 15px;
+  color: black;
+}
+
+/* MAP AND LOWER PORTION OF SCREEN */
+.nonHeader{
+  margin: 0;
+}
+#map {
+  position: relative;
+    height: 70vh;
+    margin: 0;
+    z-index: 0;
+}
+
+
+/* ATTRIBUTION */
+.attribution {
+  font-size: 11px;
+  position: absolute;
+  z-index: 99;
+  bottom: 10px;
+}
+
