@@ -14,24 +14,24 @@
 </head>
 
 <body>
-  <div class="wrapper">
     <header>
       <h1>IP Address Tracker</h1>
-      <div class="inputAndButton"><input placeholder="Search for any IP address or domain" type="text"><button><svg
+      <div class="inputAndButton"><input placeholder="Search for any IP address or domain" type="text" id="ipInput"><button class="search" onclick="ipSearch()"><svg
             xmlns="http://www.w3.org/2000/svg" width="11" height="14">
-            <path fill="none" stroke="#FFF" stroke-width="3" d="M2 1l6 6-6 6" /></svg></button></div>
+            <path fill="none" stroke="#FFF" stroke-width="3" d="M2 1l6 6-6 6" /></svg></button>
+          </div>
+       <div class="additionalInfo">
+              <div class="ip">IP ADDRESS<div class="ipInfo"></div>
+              </div>
+              <div class="location">LOCATION<div class="locationInfo"></div>
+              </div>
+              <div class="timezone">TIMEZONE<div class="timezoneInfo"></div>
+              </div>
+              <div class="isp">ISP<div class="ispInfo"></div>
+              </div>
+        </div>
     </header>
     <div class="nonHeader">
-      <div class="additionalInfo">
-        <div class="ip">IP ADDRESS<div class="ipInfo"></div>
-        </div>
-        <div class="location">LOCATION<div class="locationInfo"></div>
-        </div>
-        <div class="timezone">TIMEZONE<div class="timezoneInfo"></div>
-        </div>
-        <div class="isp">ISP<div class="ispInfo"></div>
-        </div>
-      </div>
       <div id="map"></div>
       <div class="attribution">
         Challenge by Frontend Mentor.
