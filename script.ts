@@ -22,7 +22,7 @@ fetch('http://ip-api.com/json/?fields=query,timezone,isp,city,regionName,lat,lon
       //@ts-ignore
       myMap = L.map('map', { zoomControl: false }).setView([jsonData.lat, jsonData.lon], 12);
       //@ts-ignore
-      L.tileLayer('https://api.maptiler.com/maps/streets/{z}/{x}/{y}.png?key=V2AGrVgNxQIkpoPBnhWT', {
+      L.tileLayer('http://api.maptiler.com/maps/streets/{z}/{x}/{y}.png?key=V2AGrVgNxQIkpoPBnhWT', {
         attribution: '<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>',
         maxZoom: 18,
         tileSize: 512,
