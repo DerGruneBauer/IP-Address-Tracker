@@ -10,7 +10,7 @@ let icon = L.icon({
     iconSize: [46, 56],
 });
 //Initial fetch to get users current IP address and location
-fetch('http://ip-api.com/json/?fields=query,timezone,isp,city,regionName,lat,lon')
+fetch('https://ip-api.com/json/?fields=query,timezone,isp,city,regionName,lat,lon')
     .then(function (response) {
     response.json().then(jsonData => {
         locationInfo.innerHTML = `${jsonData.city}, ${jsonData.regionName}`;
@@ -41,7 +41,7 @@ let ipSearch = function () {
         window.alert("Need to enter a valid IP address");
     }
     else {
-        fetch(`http://ip-api.com/json/${ipQuery}?fields=query,timezone,isp,city,regionName,lat,lon`)
+        fetch(`https://ip-api.com/json/${ipQuery}?fields=query,timezone,isp,city,regionName,lat,lon`)
             .then(function (response) {
             response.json().then(jsonData => {
                 myMap.remove();
